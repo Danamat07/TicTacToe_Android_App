@@ -46,7 +46,7 @@
                 android:textStyle="italic"
                 android:hint="@string/enter_player_one_name"
                 android:textColor="@color/purple"
-                android:drawableLeft="@drawable/X_icon"
+                android:drawableLeft="@drawable/x_icon"
                 android:drawablePadding="8dp"/>
 
             <EditText
@@ -60,7 +60,7 @@
                 android:textStyle="italic"
                 android:hint="@string/enter_player_two_name"
                 android:textColor="@color/purple"
-                android:drawableLeft="@drawable/O_icon"
+                android:drawableLeft="@drawable/o_icon"
                 android:drawablePadding="8dp"/>
             
             <Button
