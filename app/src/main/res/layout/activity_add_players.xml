@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ENTER \n PLAYERS NAMES"
+                android:text="@string/enter_n_players_names"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold"
@@ -44,7 +44,7 @@
                 android:padding="8dp"
                 android:maxLines="1"
                 android:textStyle="italic"
-                android:hint="Enter player one name"
+                android:hint="@string/enter_player_one_name"
                 android:textColor="@color/purple"
                 android:drawableLeft="@drawable/X_icon"
                 android:drawablePadding="8dp"/>
@@ -58,7 +58,7 @@
                 android:padding="8dp"
                 android:maxLines="1"
                 android:textStyle="italic"
-                android:hint="Enter player two name"
+                android:hint="@string/enter_player_two_name"
                 android:textColor="@color/purple"
                 android:drawableLeft="@drawable/O_icon"
                 android:drawablePadding="8dp"/>
@@ -68,7 +68,7 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="30dp"
                 android:id="@+id/startGameButton"
-                android:text="START GAME"
+                android:text="@string/start_game"
                 android:textSize="18sp"
                 app:cornerRadius="20dp"/>
 

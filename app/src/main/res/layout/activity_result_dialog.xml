@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/messageText"
             android:gravity="center"
-            android:text="Results"
+            android:text="@string/results"
             android:textColor="@color/white"
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
@@ -34,7 +34,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:backgroundTint="@color/white"
-            android:text="Play Again"
+            android:text="@string/play_again"
             android:layout_margin="20dp"
             android:textColor="@color/purple"
             app:cornerRadius="20dp"/>
