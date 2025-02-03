@@ -161,6 +161,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void changePlayerTurn(int currentPlayerTurn) {
+        playerTurn = currentPlayerTurn;
         if (playerTurn == 1) {
             binding.player1Layout.setBackgroundResource(R.drawable.black_border);
             binding.player2Layout.setBackgroundResource(R.drawable.white_box);
