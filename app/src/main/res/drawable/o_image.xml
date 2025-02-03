@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Background Path -->
+    <path
+        android:fillAlpha="0.1"
+        android:fillColor="#FFFFFF"
+        android:pathData="M86.2703,27L99.5224,67.0955L116.468,27H166L134.499,96.5134L164.045,173H112.34L99.5224,134.212L86.2703,173H35L66.0663,103.051L35,27H86.2703Z" />
+
+    <!-- Foreground Path with Gradient -->
+    <path
+        android:fillColor="@android:color/holo_blue_dark"
+        android:pathData="M81.6144,100.5C81.6144,112.794 82.768,121.689 85.0752,127.185C87.5266,132.537 92.5016,135.213 100,135.213C107.643,135.213 112.618,132.537 114.925,127.185C117.232,121.834 118.386,112.939 118.386,100.5C118.386,87.9167 117.232,79.0215 114.925,73.8146C112.762,68.4631 107.859,65.7874 100.216,65.7874C92.5737,65.7874 87.5266,68.5354 85.0752,74.0316C82.768,79.3831 81.6144,88.2059 81.6144,100.5ZM169,100.5C169,126.968 163.52,146.205 152.561,158.21C141.602,170.07 124.081,176 100,176C76.0627,176 58.5423,169.998 47.4389,157.993C36.4796,145.988 31,126.824 31,100.5C31,74.0316 36.4796,54.8673 47.4389,43.0072C58.3981,31.0024 75.9185,25 100,25C124.081,25 141.602,31.0024 152.561,43.0072C163.52,54.8673 169,74.0316 169,100.5Z">
+        <gradient
+            android:type="linear"
+            android:startX="100"
+            android:startY="25"
+            android:endX="100"
+            android:endY="176">
+            <item android:offset="0.0" android:color="#458BBC"/>
+            <item android:offset="1.0" android:color="#278C86"/>
+        </gradient>
+    </path>
+
+</vector>
