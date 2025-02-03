@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        binding.image8.setOnClickListener(new View.OnClickListener() {
+        binding.image9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (isBoxSelectable(8)) {
