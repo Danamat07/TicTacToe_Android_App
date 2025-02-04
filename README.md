@@ -5,7 +5,8 @@ A classic Tic-Tac-Toe game built in Android Studio. This simple, fun, and intera
 # 🛠️ Technologies Used
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![XML](https://img.shields.io/badge/XML-FF6600?style=for-the-badge&logo=xml&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
+
   - Java – Game logic & functionality
   - XML – UI design & vector assets
   - Android Studio – Development Environment
