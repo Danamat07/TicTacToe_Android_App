@@ -1,6 +1,7 @@
 # 🎮 TicTacToe_Android_App
 A classic Tic-Tac-Toe game built in Android Studio. This simple, fun, and interactive multiplayer game lets two players battle it out on the same device!
-> ![Languages](https://img.shields.io/badge/Languages-Java%20%7C%20XML-blue)
+> ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![XML](https://img.shields.io/badge/XML-EF2D5E?style=for-the-badge&logo=xml&logoColor=white)
 
 # 🛠️ Technologies Used
   - Java – Game logic & functionality
