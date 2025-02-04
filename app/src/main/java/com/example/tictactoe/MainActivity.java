@@ -4,17 +4,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.tictactoe.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Main activity for the Tic-Tac-Toe game.
+ * Handles game logic, player turns, and UI updates.
+ */
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
@@ -23,12 +23,16 @@ public class MainActivity extends AppCompatActivity {
     private int playerTurn = 1;
     private int totalSelectedBoxes = 1;
 
+    /**
+     * Initializes the activity, sets up the game board, and assigns click listeners.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        // Define winning combinations
         combinationList.add(new int[] {0,1,2});
         combinationList.add(new int[] {3,4,5});
         combinationList.add(new int[] {6,7,8});
@@ -38,10 +42,13 @@ public class MainActivity extends AppCompatActivity {
         combinationList.add(new int[] {0,4,8});
         combinationList.add(new int[] {2,4,6});
 
+        // Set player names from intent extras
         String getPlayerOneName = getIntent().getStringExtra("playerOne");
         String getPlayerTwoName = getIntent().getStringExtra("playerTwo");
         binding.player1Name.setText(getPlayerOneName);
         binding.player2Name.setText(getPlayerTwoName);
+
+        // Assign click listeners to each game box
 
         binding.image1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,6 +132,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Updates the game state and checks for a winner.
+     *
+     * @param imageView          The selected box.
+     * @param selectedBoxPosition The position of the selected box.
+     */
     private void performAction(ImageView imageView, int selectedBoxPosition) {
         boxPositions[selectedBoxPosition] = playerTurn;
         if (playerTurn == 1) {
@@ -160,6 +173,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Changes the turn to the next player.
+     *
+     * @param currentPlayerTurn The current player's turn (1 or 2).
+     */
     private void changePlayerTurn(int currentPlayerTurn) {
         playerTurn = currentPlayerTurn;
         if (playerTurn == 1) {
@@ -171,6 +189,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Checks if the current player has won the game.
+     *
+     * @return True if the player has won, false otherwise.
+     */
     private boolean checkResults() {
         boolean response = false;
         for (int i=0; i<combinationList.size(); i++) {
@@ -184,10 +207,19 @@ public class MainActivity extends AppCompatActivity {
         return response;
     }
 
+    /**
+     * Checks if a box is selectable.
+     *
+     * @param boxPosition The position of the box.
+     * @return True if the box is selectable, false otherwise.
+     */
     private boolean isBoxSelectable(int boxPosition) {
         return boxPositions[boxPosition] == 0;
     }
 
+    /**
+     * Restarts the match by resetting the game board.
+     */
     public void restartMatch() {
         boxPositions = new int[] {0,0,0,0,0,0,0,0,0};
         playerTurn = 1;

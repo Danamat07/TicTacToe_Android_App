@@ -7,24 +7,33 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
+/**
+ * Custom dialog to display the result of the Tic-Tac-Toe game.
+ * It shows a message indicating the winner or a draw and provides a button to restart the match.
+ */
 public class ResultDialog extends Dialog {
 
     private final String message;
     private final MainActivity mainActivity;
 
+    /**
+     * Constructs a ResultDialog.
+     *
+     * @param context      The context of the application.
+     * @param message      The message to display (winner or draw).
+     * @param mainActivity Reference to the main activity to restart the game.
+     */
     public ResultDialog(@NonNull Context context, String message, MainActivity mainActivity) {
         super(context);
         this.message = message;
         this.mainActivity = mainActivity;
     }
 
+    /**
+     * Initializes the dialog, sets the message, and handles the restart button click event.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
