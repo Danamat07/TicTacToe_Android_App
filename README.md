@@ -2,8 +2,6 @@
 A classic Tic-Tac-Toe game built in Android Studio. This simple, fun, and interactive multiplayer game lets two players battle it out on the same device!
 > ![Languages](https://img.shields.io/badge/Languages-Java%20%7C%20XML-blue)
 
-![Version](https://img.shields.io/badge/version-1.0-blue) ![License](https://img.shields.io/badge/license-MIT-green)
-
 # 🛠️ Technologies Used
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![XML](https://img.shields.io/badge/XML-FF6600?style=for-the-badge&logo=xml&logoColor=white)
