@@ -43,7 +43,9 @@ A classic Tic-Tac-Toe game built in Android Studio. This simple, fun, and intera
 
 # 🔧 Installation
   1. Clone the repository
-     > git clone https://github.com/Danamat07/TicTacToe_Android_App.git
+```yaml
+git clone https://github.com/Danamat07/TicTacToe_Android_App.git
+```
   2. Open in Android Studio
   3. Run the game
      > Connect a physical device or open an emulator
